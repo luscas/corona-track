@@ -1,0 +1,49 @@
+name: coronatrack
+description: Covid-19 Updates
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+modules:
+  androiX: true
+
+dependencies:
+  flutter_svg: ^0.17.4
+  dio: ^3.0.9
+  flutter_mobx: ^1.1.0
+  mobx: ^1.1.1
+  flutter_modular: ^1.1.1
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  mockito: ^4.1.1
+  mobx_codegen: ^1.0.3
+  build_runner: ^1.8.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+   - assets/svg/logo.svg
+  fonts:
+    - family: Prompt
+      fonts:
+        - asset: assets/fonts/Prompt-Regular.ttf
+        - asset: assets/fonts/Prompt-Light.ttf
+        - asset: assets/fonts/Prompt-SemiBold.ttf
+        - asset: assets/fonts/Prompt-Medium.ttf
+        - asset: assets/fonts/Prompt-Bold.ttf
+        - asset: assets/fonts/Prompt-ExtraBold.ttf
+        - asset: assets/fonts/Prompt-Black.ttf
+    - family: Dosis
+      fonts:
+        - asset: assets/fonts/Dosis-Regular.ttf
+        - asset: assets/fonts/Dosis-Light.ttf
+        - asset: assets/fonts/Dosis-ExtraLight.ttf
+        - asset: assets/fonts/Dosis-SemiBold.ttf
+        - asset: assets/fonts/Dosis-Medium.ttf
+        - asset: assets/fonts/Dosis-Bold.ttf
+        - asset: assets/fonts/Dosis-ExtraBold.ttf
