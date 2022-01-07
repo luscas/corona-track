@@ -9,25 +9,17 @@ modules:
   androiX: true
 
 dependencies:
-  flutter_svg: ^0.17.4
-  dio: ^3.0.9
-  flutter_mobx: ^1.1.0
-  mobx: ^1.1.1
-  flutter_modular: ^1.1.1
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  mockito: ^4.1.1
-  mobx_codegen: ^1.0.3
-  build_runner: ^1.8.1
   flutter_test:
     sdk: flutter
 
 flutter:
   uses-material-design: true
   assets:
-   - assets/svg/logo.svg
+    - assets/img/logo.png
   fonts:
     - family: Prompt
       fonts:

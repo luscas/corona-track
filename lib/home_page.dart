@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:coronatrack/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,18 +10,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
-  Widget logo() {
-    return Container(
-      margin: EdgeInsets.only(top: 80),
-      child: Center(
-        child: SvgPicture.asset('assets/svg/logo.svg'),
-      )
-    );
-  }
-
-  final TextEditingController emailController = new TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +24,12 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.symmetric(horizontal: 25),
                 child: Column(
                   children: <Widget>[
-                    logo(),
+                    Container(
+                      margin: EdgeInsets.only(top: 80),
+                      child: Center(
+                        child: Image.asset('assets/img/logo.png'),
+                      )
+                    ),
 
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
